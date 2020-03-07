@@ -60,9 +60,9 @@
         {{ end }}
         <!-- split -->
         <div style="height: 50px;"></div>
-        {{ if .Site.Params.disqus }}
+        {{ if .Site.Params.valine.enable }}
         <div class="post-comments">
-          {{ partial "disqus.html" . }}
+        {{ partial "valine.html" . }}
         </div>
         {{ end }}
         {{ end }}
