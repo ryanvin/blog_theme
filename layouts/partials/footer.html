@@ -1,13 +1,15 @@
 <div class="site-footer">
+  <div class="site-footer-item">
+    <a href="/">♥Home</a>
+  </div>
   {{ range .Site.Params.socials }}
   <div class="site-footer-item">
     <a href="{{ .link }}" target="_blank">{{ .name }}</a>
   </div>
   {{ end }}
+</div>
+<div class="site-footer">
   <div class="site-footer-item">
-      <a href="/">Home</a>
-  </div>
-  <div class="site-footer-item">
-    <span>❤ {{ .Site.Params.ICP }}</span>
+    <span>{{ .Site.Params.ICP }}</span>
   </div>
 </div>
